@@ -66,8 +66,20 @@ ul li a:hover{
 }
 
 .info h1{
-    font-size: 65px;
-    color: rgb(36,32,30);
+  font-size: 65px;
+}
+
+.title .vlsi{
+  color: rgb(36,32,30);
+}
+
+.title .physical{
+  color: rgb(230,104,59);
+}
+
+.title .design{
+  color: rgb(36,32,30);
+}
 }
 .title span{
     margin-right: 18px;
@@ -130,5 +142,6 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: rgb(59,174,209);
 }
+
 
 
