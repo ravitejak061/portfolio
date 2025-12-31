@@ -29,7 +29,7 @@
 .brand{
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .logo{
@@ -144,6 +144,7 @@ ul li a:hover{
 .icons ion-icon:hover{
   color: rgb(59,174,209);
 }
+
 
 
 
