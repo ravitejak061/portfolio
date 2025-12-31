@@ -79,7 +79,7 @@ ul li a:hover{
     line-height: 24px;
 }
 
-.info span{
+.title .physical{
     color: rgb(230,104,59);
 }
 
@@ -102,7 +102,7 @@ ul li a:hover{
     width: 30%;
     height: 60%;
     position: absolute;
-    right: 100px;
+    right: 120px;
     bottom: 0;
 }
 
@@ -111,10 +111,6 @@ ul li a:hover{
     height: 120%;
     right: 0%;
     bottom: 0;
-}
-
-.image:hover .girl{
-    left: 55%;
 }
 
 .icons a{
@@ -134,4 +130,5 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: rgb(59,174,209);
 }
+
 
