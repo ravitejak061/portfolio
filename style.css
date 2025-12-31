@@ -1,21 +1,20 @@
+/* ================= RESET ================= */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= MAIN ================= */
 .main{
   width: 100%;
   height: 100vh;
-  background: url(pic/bg.jpg);
-  background-position: center;
-  background-size: cover;
+  background: #fff;
   position: relative;
   font-family: sans-serif;
 }
 
 /* ================= NAVBAR ================= */
-
 .navbar{
   width: 86%;
   margin: auto;
@@ -25,15 +24,15 @@
   justify-content: space-between;
 }
 
-/* logo + name */
+/* BRAND (LOGO + NAME) */
 .brand{
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 
 .logo{
   width: 50px;
+  margin-right: 6px;   /* 🔥 distance between dev logo & name */
 }
 
 .brand-name{
@@ -42,6 +41,7 @@
   color: rgb(230,104,59);
 }
 
+/* MENU */
 ul{
   list-style: none;
 }
@@ -54,24 +54,19 @@ ul li{
 ul li a{
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
   color: darkslategray;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 ul li a:hover{
   color: rgb(230,104,59);
 }
 
-/* ================= INFO ================= */
-
+/* ================= INFO SECTION ================= */
 .info{
   margin-left: 7%;
   margin-top: 6%;
-}
-
-.info h1{
-  font-size: 65px;
-  color: rgb(36,32,30);
 }
 
 .info h3{
@@ -81,16 +76,27 @@ ul li a:hover{
   margin-bottom: 10px;
 }
 
-/* only V P D E */
+/* ================= MAIN TITLE ================= */
+.title{
+  font-size: 65px;
+  font-weight: bold;
+  color: rgb(36,32,30);
+
+  /* 🔥 LETTER GAP CONTROL */
+  letter-spacing: 4px;   /* change this for letter spacing */
+}
+
+/* 🔥 WORD GAP CONTROL */
+.title span{
+  margin-right: 10px;    /* change this for word spacing */
+}
+
+/* 🔥 ORANGE LETTERS (V P D E only) */
 .orange{
   color: rgb(230,104,59);
 }
 
-/* spacing between words */
-.title span{
-  margin-right: 18px;
-}
-
+/* ================= BUTTON ================= */
 .info a{
   text-decoration: none;
   color: white;
@@ -99,7 +105,7 @@ ul li a:hover{
   border-radius: 10px;
   display: inline-block;
   margin-top: 20px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 .info a:hover{
@@ -107,7 +113,6 @@ ul li a:hover{
 }
 
 /* ================= IMAGE ================= */
-
 .image{
   width: 30%;
   height: 60%;
@@ -124,7 +129,6 @@ ul li a:hover{
 }
 
 /* ================= ICONS ================= */
-
 .icons{
   margin-left: 7%;
   margin-top: 20px;
@@ -138,12 +142,13 @@ ul li a:hover{
   font-size: 40px;
   color: black;
   margin-right: 20px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 .icons ion-icon:hover{
   color: rgb(59,174,209);
 }
+
 
 
 
