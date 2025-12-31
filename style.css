@@ -69,6 +69,9 @@ ul li a:hover{
     font-size: 65px;
     color: rgb(36,32,30);
 }
+.title span{
+    margin-right: 18px;
+}
 
 .info h3{
     font-size: 18px;
@@ -105,11 +108,9 @@ ul li a:hover{
 
 .image img{
     position: absolute;
-    height: 140%;
-    left: 40%;
-    transform: translate(-55%);
+    height: 120%;
+    right: 0%;
     bottom: 0;
-    transition: left 2s ease;
 }
 
 .image:hover .girl{
@@ -133,3 +134,4 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: rgb(59,174,209);
 }
+
