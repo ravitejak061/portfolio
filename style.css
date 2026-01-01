@@ -1,137 +1,126 @@
  /* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* BODY */
-body {
-    background: #f4f4f4;
-    color: #222;
+/* MAIN */
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #ffffff;
 }
 
 /* NAVBAR */
-.navbar {
-    width: 90%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar{
+  width: 86%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
+.brand{
+  display: flex;
+  align-items: center;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 22px;
+.logo{
+  width: 50px;
+  margin-right: 6px;
 }
 
-.navbar ul li {
-    font-size: 14px;
-    cursor: pointer;
+.brand-name{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(230,104,59);
 }
 
-/* HERO */
-.hero {
-    width: 90%;
-    margin: auto;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* MENU */
+ul{
+  list-style: none;
 }
 
-/* TEXT */
-.hero-text {
-    width: 60%;
+ul li{
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.intro {
-    font-size: 18px;
-    margin-bottom: 15px;
+ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f4f4f;
 }
 
-.intro span {
-    color: #e74c3c;
-    font-weight: bold;
+ul li a:hover{
+  color: rgb(230,104,59);
 }
 
-/* 🔥 TITLE — NATURAL WORD SPACING */
-.title {
-    font-size: 58px;
-    font-weight: 800;
-    margin-bottom: 25px;
+/* INFO */
+.info{
+  margin-left: 7%;
+  margin-top: 6%;
 }
 
-/* EACH WORD INLINE (NO EXTRA SPACE) */
-.title span {
-    display: inline;
-    margin-right: 6px;   /* 🔴 SMALL SPACE ONLY */
+.info h3{
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-/* LAST WORD */
-.title span:last-child {
-    margin-right: 0;
+/* TITLE */
+.title{
+  font-size: 65px;
+  font-weight: bold;
+  color: rgb(36,32,30);
 }
 
-/* COLOR */
-.vlsi {
-    color: #e74c3c;
+/* 🔥 LESS WORD SPACING (FINAL FIX) */
+.title .word{
+  display: inline-block;
+  margin-right: 10px;   /* 👈 reduced spacing */
 }
 
-/* DESCRIPTION */
-.desc {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+/* ORANGE LETTERS */
+.orange{
+  color: rgb(230,104,59);
+}
+
+/* PARAGRAPH */
+.info p{
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 10px;
 }
 
 /* BUTTON */
-button {
-    padding: 12px 28px;
-    border: none;
-    background: #222;
-    color: #fff;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
+.btn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: rgb(36,32,30);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-button:hover {
-    background: #e74c3c;
+.btn:hover{
+  background: rgb(59,174,209);
 }
 
 /* IMAGE */
-.hero-img img {
-    width: 320px;
+.image{
+  position: absolute;
+  right: 120px;
+  bottom: 0;
+  width: 30%;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 42px;
-    }
-
-    .hero-img img {
-        margin-top: 30px;
-        width: 260px;
-    }
+.image img{
+  width: 100%;
 }
 
 
