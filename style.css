@@ -1,8 +1,15 @@
+ /* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f8f8f8;
+    color: #222;
 }
 
 /* NAVBAR */
@@ -11,8 +18,13 @@
     margin: auto;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -21,9 +33,9 @@
     gap: 25px;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
+.navbar ul li {
+    cursor: pointer;
+    font-size: 14px;
 }
 
 /* HERO SECTION */
@@ -36,64 +48,95 @@
     justify-content: space-between;
 }
 
-/* TEXT SIDE */
+/* LEFT CONTENT */
 .hero-text {
-    max-width: 55%;
+    width: 55%;
 }
 
-.intro {
+.hero-text .intro {
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.intro span {
+.hero-text .intro span {
     color: #ff3b3b;
     font-weight: bold;
 }
 
-/* MAIN HEADING (IMPORTANT FIX) */
-.hero-text h1 {
+/* 🔥 MAIN HEADING – WORD SPACE FIX */
+.title {
     font-size: 58px;
     font-weight: 800;
-    color: #222;
-
-    /* ONLY WORD SPACING */
-    letter-spacing: normal;
-    word-spacing: 8px;
-
+    display: flex;              /* IMPORTANT */
+    align-items: center;
     margin-bottom: 25px;
 }
 
-.highlight {
+/* CONTROL WORD SPACING HERE */
+.title span {
+    margin-right: 14px;         /* 🔴 CHANGE THIS VALUE */
+}
+
+/* REMOVE EXTRA SPACE AFTER LAST WORD */
+.title span:last-child {
+    margin-right: 0;
+}
+
+/* VLSI COLOR */
+.title .vlsi {
     color: #ff3b3b;
 }
 
 /* DESCRIPTION */
-.desc {
+.hero-text .desc {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
 /* BUTTON */
-button {
-    padding: 12px 30px;
-    border: none;
+.hero-text button {
+    padding: 12px 28px;
     background: #222;
-    color: white;
-    font-size: 16px;
+    color: #fff;
+    border: none;
     border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-button:hover {
+.hero-text button:hover {
     background: #ff3b3b;
 }
 
-/* IMAGE SIDE */
+/* RIGHT IMAGE */
 .hero-img img {
     width: 320px;
 }
+
+/* RESPONSIVE (OPTIONAL BUT GOOD) */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .title {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-img img {
+        margin-top: 40px;
+        width: 260px;
+    }
+}
+
+
 
 
 
