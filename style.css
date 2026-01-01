@@ -8,7 +8,7 @@
 
 /* BODY */
 body {
-    background: #f8f8f8;
+    background: #f4f4f4;
     color: #222;
 }
 
@@ -18,8 +18,8 @@ body {
     margin: auto;
     padding: 20px 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -30,15 +30,15 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 .navbar ul li {
-    cursor: pointer;
     font-size: 14px;
+    cursor: pointer;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     width: 90%;
     margin: auto;
@@ -48,73 +48,72 @@ body {
     justify-content: space-between;
 }
 
-/* LEFT CONTENT */
+/* TEXT */
 .hero-text {
-    width: 55%;
+    width: 60%;
 }
 
-.hero-text .intro {
+.intro {
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.hero-text .intro span {
-    color: #ff3b3b;
+.intro span {
+    color: #e74c3c;
     font-weight: bold;
 }
 
-/* 🔥 MAIN HEADING – WORD SPACE FIX */
+/* 🔥 TITLE — NATURAL WORD SPACING */
 .title {
     font-size: 58px;
     font-weight: 800;
-    display: flex;              /* IMPORTANT */
-    align-items: center;
     margin-bottom: 25px;
 }
 
-/* CONTROL WORD SPACING HERE */
+/* EACH WORD INLINE (NO EXTRA SPACE) */
 .title span {
-    margin-right: 14px;         /* 🔴 CHANGE THIS VALUE */
+    display: inline;
+    margin-right: 6px;   /* 🔴 SMALL SPACE ONLY */
 }
 
-/* REMOVE EXTRA SPACE AFTER LAST WORD */
+/* LAST WORD */
 .title span:last-child {
     margin-right: 0;
 }
 
-/* VLSI COLOR */
-.title .vlsi {
-    color: #ff3b3b;
+/* COLOR */
+.vlsi {
+    color: #e74c3c;
 }
 
 /* DESCRIPTION */
-.hero-text .desc {
+.desc {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
 /* BUTTON */
-.hero-text button {
+button {
     padding: 12px 28px;
+    border: none;
     background: #222;
     color: #fff;
-    border: none;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.hero-text button:hover {
-    background: #ff3b3b;
+button:hover {
+    background: #e74c3c;
 }
 
-/* RIGHT IMAGE */
+/* IMAGE */
 .hero-img img {
     width: 320px;
 }
 
-/* RESPONSIVE (OPTIONAL BUT GOOD) */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
@@ -126,15 +125,15 @@ body {
     }
 
     .title {
-        justify-content: center;
-        flex-wrap: wrap;
+        font-size: 42px;
     }
 
     .hero-img img {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 260px;
     }
 }
+
 
 
 
